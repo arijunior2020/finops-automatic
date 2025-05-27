@@ -1,69 +1,74 @@
 # 📊 Projeto FinOps-Automatic
 
-**FinOps-Automatic** é uma solução completa e conteinerizada que realiza **avaliação automatizada de maturidade FinOps** e geração de relatórios profissionais com base em boas práticas de gestão financeira na nuvem.
+[![AWS](https://img.shields.io/badge/Built%20for-AWS-orange?logo=amazonaws)](https://aws.amazon.com)
+[![FinOps](https://img.shields.io/badge/FinOps%20Enabled-Práticas%20Financeiras%20em%20Nuvem-blueviolet?logo=finops)](https://www.finops.org)
 
-Este projeto foi desenvolvido para **ambientes em AWS**, com o objetivo de **eliminar desperdícios**, **otimizar custos** e **estabelecer governança financeira** baseada em dados. Ele combina os princípios do **framework da FinOps Foundation (finops.org)** com os **4 pilares do AWS Cloud Financial Management (CFM)**: `See`, `Save`, `Plan`, `Run`.
+
+**FinOps-Automatic** é uma solução simples, conteinerizada e automatizada que realiza **avaliações de maturidade FinOps**, gera **relatórios profissionais** e promove a **governança financeira na nuvem** com base em boas práticas e frameworks reconhecidos.
+
+Projetado para **ambientes em AWS**, o objetivo principal é:
+
+- ✅ Eliminar desperdícios  
+- 💸 Otimizar custos  
+- 🧭 Estabelecer governança baseada em dados  
+- 🔄 Impulsionar a cultura FinOps nas organizações
+
+A solução combina os princípios da **FinOps Foundation (finops.org)** com os **4 pilares do AWS Cloud Financial Management (CFM)**:  
+🔹 *See* | 🔹 *Save* | 🔹 *Plan* | 🔹 *Run*
+
+---
+
+## 🔍 Modelo de Maturidade FinOps (Resumo)
+
+A avaliação segue a abordagem **Crawl, Walk, Run** para medir o nível de adoção de cada capacidade FinOps:
+
+| Nível     | Características-chave | Indicadores esperados |
+|-----------|------------------------|------------------------|
+| **Rastejar (Crawl)** | Visibilidade parcial, processos manuais, KPIs básicos | ≥50% alocação de custos, ±20% de precisão |
+| **Andar (Walk)**     | Processos definidos, automação parcial, KPIs intermediários | ≥80% alocação, ±15% de precisão |
+| **Correr (Run)**     | Governança ativa, automação ampla, KPIs estratégicos | >90% alocação, ±12% de precisão |
+
+> **Importante:** A meta não é alcançar o nível máximo em todas as capacidades, mas sim **focar naquelas que trazem maior valor de negócio**.
 
 ---
 
 ## ⚙️ Como Funciona
 
-1. Você preenche os **formulários de entrada** localizados na pasta `dados/` com informações da sua operação em nuvem.
-2. Após o preenchimento, você executa o projeto via `docker-compose up`.
-3. O container Python processa os dados, gera gráficos e produz relatórios `.docx` automaticamente na pasta `relatorios/`.
-4. Os relatórios são formatados, claros e prontos para apresentação executiva ou auditoria interna.
+1. Preencha os formulários localizados na pasta `dados/` com informações sobre seu ambiente em nuvem.
+2. Execute o projeto com `docker-compose up`.
+3. O container Python processa os dados, gera gráficos e cria automaticamente relatórios `.docx` na pasta `relatorios/`.
+4. Os relatórios são prontos para apresentações executivas, auditorias ou planejamento estratégico.
 
 ---
 
-## 🗂️ Estrutura dos Formulários (`/dados`)
+## 📂 Estrutura dos Formulários (`/dados`)
 
 ### `01_avaliacao_maturidade.xlsx`
-Avalia o nível atual de maturidade FinOps da organização. Cada linha representa uma **capacidade** e seu respectivo **nível de adoção**:
-- `Rastejar`: visibilidade parcial, reativo.
-- `Andar`: processos definidos, ferramentas ativas.
-- `Correr`: governança contínua, metas e indicadores maduros.
-
-🔢 Inclui cálculo automático da média por domínio e um gráfico radar embutido.
-
----
+Avaliação de maturidade FinOps por capacidade/domínio (Rastejar, Andar, Correr). Inclui gráfico radar e média automática por domínio.
 
 ### `02_papeis_personas.xlsx`
-Define quem são os **atores responsáveis** na prática FinOps:
-- `Engenharia`, `Finanças`, `Produto`, `Liderança` etc.
-- Descreve o papel de cada um na cadeia de decisão e operação.
-
----
+Mapeamento dos papéis FinOps nas áreas de Engenharia, Produto, Finanças e Liderança.
 
 ### `03_ferramentas_aws.xlsx`
-Controle de adoção das ferramentas nativas da AWS voltadas para gestão financeira:
-- Cost Explorer, Budgets, CUR, Compute Optimizer, Trusted Advisor.
-- Marque como `Ativo` ou `Inativo` e visualize em gráfico.
-
----
+Checklist de ferramentas AWS voltadas para gestão financeira (Cost Explorer, Budgets, CUR etc.).
 
 ### `04_execucao_piloto.xlsx`
-Detalhamento de um projeto piloto com foco FinOps:
-- Nome do projeto (ex: API, ETL)
-- Responsável técnico
-- Indicadores/KPIs avaliados
-- Resultado (%)
-
----
+Registro de execuções-piloto FinOps com responsáveis, escopo, KPIs e resultados.
 
 ### `05_governanca_indicadores.xlsx`
-Aponta os principais **indicadores financeiros e operacionais** monitorados:
-- Custo Mensal, Cobertura de Tags, Alertas de Budget, Economia Estimada.
-- Informe metas e valores alcançados para gerar gráficos de conformidade.
+Monitoramento de indicadores-chave como Custo Mensal, Alertas, Cobertura de Tags, Economia estimada.
+
+### `06_finops_executivo`
+Relatório executivo com recomendações, melhores práticas e plano de ação orientado ao seu ambiente.
 
 ---
 
 ## 🚀 Executando o Projeto
 
-### 1. Requisitos
-
+### 🔧 Requisitos
 - Docker e Docker Compose instalados
 
-### 2. Comando de execução
+### ▶️ Comando
 
 ```bash
 docker-compose up --build
@@ -93,6 +98,33 @@ Este projeto pode ser facilmente estendido para:
 
 ---
 
-## 💡 Objetivo Final
+## 🎯 Objetivo Final
 
-Capacitar sua empresa a adotar uma **cultura FinOps contínua**, com **transparência financeira**, **colaboração entre áreas** e **otimização contínua de custos** em nuvem.
+Capacitar sua organização a adotar uma cultura FinOps contínua, com:
+- Transparência e visibilidade financeira
+- Colaboração entre áreas
+- Otimização contínua de custos
+- Governança escalável e sustentável
+
+---
+
+## 📜 Licença
+
+Este projeto está licenciado sob os termos da licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+
+---
+
+## 👨‍💻 Autor
+
+Arimatéia Júnior
+Arquiteto de Software e Soluções | Especialista em Cloud e DevOps
+
+---
+
+## 🤝 Contribua
+
+Sinta-se à vontade para contribuir com o projeto:
+
+- Faça um fork
+- Envie seu Pull Request
+- Abra uma issue caso encontre algum problema
