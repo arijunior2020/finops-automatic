@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  finops:
+    container_name: finops-automatic
+    build: .
+    volumes:
+      - ./dados:/app/dados
+      - ./relatorios:/app/relatorios
+    restart: "no"
