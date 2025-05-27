@@ -9,10 +9,10 @@ from datetime import datetime
 # ========================================
 # 📌 CONFIGURAÇÕES INSTITUCIONAIS DO RELATÓRIO
 # ========================================
-cliente = "Antagonista"
-autores = ["Arimatéia Júnior", "Yuri Lopes"]
-empresa_exec = "InCloud tecnologia"
-logo_path = "dados/logo_incloud.png"  # Caminho da logo
+cliente = "Up Séries"
+autores = ["Arimatéia Júnior"]
+empresa_exec = "StartCode Cloud Tecnologia"
+logo_path = "dados/logo-startcodecloud.png"
 data_hoje = datetime.now().strftime("%d/%m/%Y")
 
 # ========================================

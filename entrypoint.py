@@ -6,6 +6,7 @@ scripts = [
     "scripts/gerar_ferramentas_aws.py",
     "scripts/gerar_execucao_piloto.py",
     "scripts/gerar_governanca_indicadores.py",
+    "scripts/gerar_finops_executivo.py"
 ]
 
 for script in scripts:
