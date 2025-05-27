@@ -43,22 +43,22 @@ A avaliação segue a abordagem **Crawl, Walk, Run** para medir o nível de ado�
 
 ## 📂 Estrutura dos Formulários (`/dados`)
 
-### `01_avaliacao_maturidade.xlsx`
+### [01_avaliacao_maturidade.xlsx](dados/01_avaliacao_maturidade.xlsx)
 Avaliação de maturidade FinOps por capacidade/domínio (Rastejar, Andar, Correr). Inclui gráfico radar e média automática por domínio.
 
-### `02_papeis_personas.xlsx`
+### [02_papeis_personas.xlsx](dados/02_papeis_personas.xlsx)
 Mapeamento dos papéis FinOps nas áreas de Engenharia, Produto, Finanças e Liderança.
 
-### `03_ferramentas_aws.xlsx`
+### [03_ferramentas_aws.xlsx](dados/03_ferramentas_aws.xlsx)
 Checklist de ferramentas AWS voltadas para gestão financeira (Cost Explorer, Budgets, CUR etc.).
 
-### `04_execucao_piloto.xlsx`
+### [04_execucao_piloto.xlsx](dados/04_execucao_piloto.xlsx)
 Registro de execuções-piloto FinOps com responsáveis, escopo, KPIs e resultados.
 
-### `05_governanca_indicadores.xlsx`
+### [05_governanca_indicadores.xlsx](dados/05_governanca_indicadores.xlsx)
 Monitoramento de indicadores-chave como Custo Mensal, Alertas, Cobertura de Tags, Economia estimada.
 
-### `06_finops_executivo`
+### [06_finops_executivo](dados/06_finops_executivo.xlsx)
 Relatório executivo com recomendações, melhores práticas e plano de ação orientado ao seu ambiente.
 
 ---
